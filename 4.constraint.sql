@@ -34,3 +34,6 @@ alter table author modify column name varchar(255) default 'anonymous';
 -- auto_increment
 alter table author modify column id bigint auto_increment;
 alter table post modify column id bigint auto_increment;
+
+-- uuid
+alter table post add column user_id char(36) default (UUID());
