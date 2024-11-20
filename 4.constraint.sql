@@ -1,9 +1,9 @@
 -- not null 제약조건 추가
-alter table author modify colum email varchar(255) not null;
+alter table author modify column email varchar(255) not null;
 
 -- uique 제약조건 추가
-alter table author modify colum email varchar(255) uique;
-alter table author modify colum email varchar(255) not null unique;
+alter table author modify column email varchar(255) uique;
+alter table author modify column email varchar(255) not null unique;
 
 -- foreign key 제약조건 삭제 및 추가
 -- 제약조건의 이름 확인 후 삭제 및 추가 가능
