@@ -99,3 +99,6 @@ group by create_time;
 select author_id from post group by author_id having count(*)>=2
 select author_id count(*) as count from post group by author_id having count>=2;
 
+-- 다중열 group by 절
+-- post 에서 작성자별로 만든 제목의 개수를 출력하시오.
+select author_id, title, count(*) from post group by author_id, title;
